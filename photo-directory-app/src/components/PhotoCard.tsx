@@ -12,9 +12,10 @@ type PhotoCardProps = {
 };
 
 const PhotoCard: React.FC<PhotoCardProps> = ({ photo }) => {
+    const imageSrc = require(`../photos/sullyoon.jpg`);
     return (
         <div className="photo-card">
-            <img src={photo.imagePath} alt={photo.title} />
+            <img src={imageSrc} alt={photo.title} />
             <h3>{photo.title}</h3>
             <p>{photo.description}</p>
         </div>

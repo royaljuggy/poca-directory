@@ -1,9 +1,9 @@
-const photos = [
+const photosData = [
   {
     id: 1,
-    title: "Sunset",
-    description: "A beautiful sunset over the mountains.",
-    imagePath: "path/to/temp/sunset.jpg"
+    title: "Sullyoon",
+    description: "Sullyoon.",
+    imagePath: "photos/sullyoon.jpg"
   },
   {
     id: 2,
@@ -31,4 +31,4 @@ const photos = [
   }
 ];
 
-export default photos;
+export default photosData;

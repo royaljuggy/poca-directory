@@ -8,12 +8,13 @@ const App: React.FC = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [filterCriteria, setFilterCriteria] = useState<string | null>(null);
 
-    const images = require.context('./photos');
-    const photoList = images.keys().map((filename : string, idx : number) => ({
-        id: idx,
-        title: filename.replace('./', ''),
-        src: images(filename),
-    }));
+    // const images = require.context('./photos');
+    // console.log(images)
+    // const photoList = images.keys().map((filename : string, idx : number) => ({
+    //     id: idx,
+    //     title: filename.replace('./', ''),
+    //     src: images(filename),
+    // }));
 
     const filteredPhotos = photosData.filter(photo => {
         const matchesSearch = photo.title.toLowerCase().includes(searchQuery.toLowerCase());
